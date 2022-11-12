@@ -11,3 +11,14 @@
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
+.details{
+  
+  width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 567px;
+    box-shadow: 1px 2px 9px #F4AAB9;
+    border-radius: 5px;
+padding: 20px;
+}

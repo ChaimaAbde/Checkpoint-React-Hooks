@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
 import ReactStars from "react-rating-stars-component";
+import { Link } from "react-router-dom";
 
 function Navvbar({ setText, setrate }) {
   const ratingChanged = (newRating) => {
@@ -21,6 +22,15 @@ function Navvbar({ setText, setrate }) {
           >
             Movie-Search
           </Navbar.Brand>
+          <Link to={"/"}>
+            <h3 style={{ color: "white", padding: "20px" }}>Home</h3>
+          </Link>
+          <Link to={"/about"}>
+            <h3 style={{ color: "white", padding: "20px" }}>About</h3>
+          </Link>
+          <Link to={"/movies"}>
+            <h3 style={{ color: "white", padding: "20px" }}>Movies</h3>
+          </Link>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
